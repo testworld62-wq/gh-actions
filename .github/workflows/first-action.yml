@@ -1,11 +1,12 @@
 name: first-actions
 on: workflow_dispatch
-jobs:
-    first-job:
-        runs-on: ubuntun:latest
-        steps:
-           - name: print something
-             run: echo "hellow wolrd from github"
-           - name: bye
-             run: echo "bye!"
 
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print something
+        run: echo "hello world from github"
+
+      - name: bye
+        run: echo "bye!"
