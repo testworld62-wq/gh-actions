@@ -3,10 +3,15 @@ on: push
 
 
 jobs: 
-    Test:
+    Deploment:
         runs-on: ubuntu:latest
         steps:
             - name: checkout code
               uses: actions/checkout@v3
-            - name: build
-              uses: 
+            - name: installing depencies
+              run: npm ci
+            - name: build project
+              run: npm run 
+            - name: deployment
+              run: echo "deploying code..."   
+              
