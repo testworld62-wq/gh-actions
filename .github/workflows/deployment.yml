@@ -16,3 +16,5 @@ jobs:
 
       - name: deployment
         run: echo "deploying code..."
+      - name: getting meta data about github
+        run: echo "${{toJson(github)}}"
