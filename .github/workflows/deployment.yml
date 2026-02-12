@@ -1,0 +1,12 @@
+name: React Project Action
+on: push
+
+
+jobs: 
+    Test:
+        runs-on: ubuntu:latest
+        steps:
+            - name: checkout code
+              uses: actions/checkout@v3
+            - name: build
+              uses: 
